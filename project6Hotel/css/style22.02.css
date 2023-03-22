@@ -1,0 +1,587 @@
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/MullerLight.woff');
+  src: url('fonts/MullerLight.woff2');
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/MullerRegular.woff');
+  src: url('fonts/MullerRegular.woff2');
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/MullerMedium.woff');
+  src: url('fonts/MullerMedium.woff2');
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/MullerBold.woff');
+  src: url('fonts/MullerBold.woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: 'Muller', sans-serif;
+  background: #E5E5E5;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 25px;
+  font-size: 16px;
+  line-height: 1.15;
+  font-weight: 700;
+  text-align: center;
+  color: #CC9933;
+  background-color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 1px solid #CC9933;
+}
+
+.section-heading {
+  margin: 33px;
+  padding-left: 40px;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* Header */
+
+.header {
+  margin-top: 15px;
+  margin-bottom: 65px;
+}
+
+.header-container {
+  /* margin-top: 15px;
+  margin-bottom: 70px; */
+  align-items: center;
+}
+
+/* Header-up */
+
+.header-up {
+  display: flex;
+  height: 54px;
+  margin-bottom: 30px;
+}
+
+.header-up-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 34px;
+}
+
+.header-up-link-left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: auto;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #666666;
+}
+
+.header-up-link-right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #CC9933;
+}
+
+/* Header-down */
+
+.header-down {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: white;
+  border-radius: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header-nav-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.header-nav-link {
+  color: #666666;
+}
+
+.header-down-link {
+  display: flex;
+  align-items: center;
+  height: 70%;
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #CC9933;
+}
+
+
+/* Section-hero */
+
+.hero-container {
+  height: 600px;
+  margin-bottom: 70px;
+}
+
+.section-hero-list {
+  display: flex;
+  /* flex-direction: row;
+  justify-content: space-between; */
+}
+
+.section-hero-item-left {
+  width: 573px;
+  border-radius: 15px;
+}
+
+.section-hero-item {
+  height: 258px;
+  margin-bottom: 23px;
+  margin-right: 23px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-hero-item-right {
+  width: 573px;
+  height: 540px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.section-hero-item-heading {
+  display: block;
+  margin: 0;
+  margin-bottom: 15px;
+  max-width: 299px;
+  padding: 0;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.section-hero-item-heading-luxe {
+  margin-top: 60px;
+}
+
+.section-hero-item-maldives {
+  background-image: url('/Skillbox/project6Hotel/img/maldives.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-hero-item-luxe {
+  background-image: url('/Skillbox/project6Hotel/img/luxe.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-hero-item-hottour {
+  background-image: url('/Skillbox/project6Hotel/img/hottour.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-hero-description {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-bottom: 47px;
+}
+
+.section-hero-link {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #FFCC66;
+}
+
+/* Section-aboutus */
+
+.aboutus-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 70px;
+}
+
+.section-aboutus-description {
+  max-width: 888px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* Section-services */
+
+.section-services-list {
+  display: flex;
+  flex: 1 1 50%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.section-services-item {
+  width: 573px;
+  margin-bottom: 25px;
+  padding-bottom: 50px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+
+.section-services-item:nth-child(2n) {
+  margin-left: 23px;
+}
+
+.section-services-photo {
+  margin-bottom: 25px;
+}
+
+.section-services-link {
+  margin-left: 45px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #CC9933;
+}
+
+.section-services-description {
+  margin-left: 45px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* Section-benefits */
+
+.section-benefits-list {
+  display: flex;
+  flex: 1 1 25%;
+  flex-wrap: wrap;
+}
+
+.section-benefits-item {
+  width: 275px;
+  margin-bottom: 23px;
+  padding: 42px 0 42px 42px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+}
+
+.section-benefits-item:not(:nth-child(4n)) {
+  margin-right: 23px;
+}
+
+.section-benefits-icon {
+  display: block;
+}
+
+.section-benefits-description {
+  width: 187px;
+  display: block;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #000000;
+}
+
+
+/* Section-location */
+
+.section-location-list {
+  display: flex;
+  flex: 1 1 33%;
+  flex-wrap: wrap;
+}
+
+.section-location-item {
+  width: 373px;
+  padding-bottom: 42px;
+  margin-bottom: 23px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+
+.section-location-item:not(:nth-child(3n)) {
+  margin-right: 23px;
+}
+
+.section-location-photo-hotel {
+  margin-bottom: 28px;
+}
+
+.section-location-name-hotel {
+  font-size: 16px;
+  line-height: 1.15;
+  font-weight: 400;
+  margin-left: 45px;
+}
+
+.section-location-location-hotel {
+  margin-left: 45px;
+  margin-bottom: 16px;
+}
+
+.section-location-btn {
+  margin-left: 45px;
+  padding: 13px 20px;
+  font-weight: 400;
+}
+
+.section-location-link-photo {
+  background-image: url('/Skillbox/project6Hotel/img/hotelall.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: flex;
+  align-items: flex-end;
+}
+
+.section-location-link {
+  margin-left: 40px;
+  margin-bottom: 35px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.section-location-price-toplist {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+/* Section-search */
+
+.form-container {
+  width: 1170px;
+  padding-top: 38px;
+  padding-bottom: 71px;
+  margin-bottom: 70px;
+  border-radius: 15px;
+  background-color: #E9E9E9;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex: 1 1 16%;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 32px 28px;
+  margin: 0 30px;
+}
+
+/* .form-item {
+  border-right: 1px solid #E1E1E1;
+} */
+
+.form-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.form-input {
+  border: none;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.form-input-number {
+border-bottom: 1px solid #CCC;
+}
+
+.label-name {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.btn-submit {
+  padding: 13px 30px;
+  font-weight: 400;
+}
+
+/* Section-contacts */
+
+.section-contacts-general {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 44px;
+}
+
+.section-contacts-left {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+}
+
+.section-contacts-left-table {
+  margin-bottom: 45px;
+}
+
+.section-contacts-left-tbody {
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: grey;
+}
+
+.section-contacts-left-tbody-rowname {
+  width: 146px;
+  padding: 22px 0;
+  font-size: 20px;
+  line-height: 1em;
+  font-weight: 700;
+  vertical-align: top;
+}
+
+.section-contacts-left-tbody-discr {
+  width: 229px;
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0em;
+  vertical-align: top;
+}
+
+.section-contacts-left-tbody-splitter {
+  height: 1px;
+  background-color: #c4c4c4;
+  padding: 1px;
+}
+
+.section-contacts-link {
+  color: #CC9933
+}
+
+.section-contacts-left-btn {
+  padding: 27px 29px;
+  max-width: 60%;
+}
+
+/* Footer */
+
+.footer-container {
+  display: flex;
+  width: 1170px;
+  align-items: flex-start;
+  padding: 44px 52px 55px 52px;
+  /* height: 341px; */
+  background-color: #333333;
+  border-radius: 15px;
+  background-image: url('/Skillbox/project6Hotel/img/footersun.svg');
+  background-repeat: no-repeat;
+  background-position: right 176px bottom;
+}
+
+.footer-left {
+  width: 320px;
+  margin-right: 102px;
+}
+
+.footer-center {
+  width: 358px;
+  margin-right: auto;
+}
+
+.footer-right {
+  width: 25px;
+}
