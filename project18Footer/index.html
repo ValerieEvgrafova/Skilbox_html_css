@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    [class*="ground-pane"] {
+      filter: grayscale(1);
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="section-checkbox">
+      <div class="checkbox-container">
+        <h2 class="checkbox-header">Категории:</h2>
+        <ul class="checkbox-list">
+          <li class="checkbox-item">
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox-input">Динозавры
+              <span class="checkbox-span"></span>
+            </label>
+          </li>
+
+          <li class="checkbox-item">
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox-input">Медведи
+              <span class="checkbox-span"></span>
+            </label>
+          </li>
+
+          <li class="checkbox-item">
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox-input">Косули
+              <span class="checkbox-span"></span>
+            </label>
+          </li>
+
+          <li class="checkbox-item">
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox-input">Лисы
+              <span class="checkbox-span"></span>
+            </label>
+          </li>
+
+          <li class="checkbox-item">
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox-input">Волки
+              <span class="checkbox-span"></span>
+            </label>
+          </li>
+
+          <li class="checkbox-item">
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox-input">Олени и лоси
+              <span class="checkbox-span"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="select_closed-container">
+      <select name="select_closed select">
+        <option class="select-option" value="">Материал</option>
+      </select>
+    </div>
+
+    <div class="select_opened-container">
+      <select name="select_opened select">
+        <option class="select-option" value="">Материал</option>
+        <option class="select-option" value="">Древесина</option>
+        <option class="select-option" value="">Металл</option>
+        <option class="select-option" value="">Камень</option>
+        <option class="select-option" value="">Пластик</option>
+        <option class="select-option" value="">Композитный</option>
+        <option class="select-option" value="">Гипс</option>
+      </select>
+    </div>
+
+    <div class="section-map">
+        <div id="map-container"></div>
+
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+
+        <script type="text/javascript">
+          ymaps.ready(init);
+          function init(){
+            var myMap = new ymaps.Map("map-container", {
+              center: [48.872185, 2.354224],
+              zoom: 17
+            });
+
+            var myPlacemark = new ymaps.Placemark([48.872185, 2.354224], {}, {
+                iconLayout: 'default#image',
+                iconImageHref: 'Subtract.svg',
+                iconImageSize: [25, 35],
+                iconImageOffset: [-3, -42]
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+          }
+        </script>
+    </div>
+
+    <div data-simplebar class="section-scroll">
+      <p class="scroll-description">Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований. Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.</p>
+    </div>
+
+    <form class="form" action="">
+      <!-- <label for="name" class="form-label"></label> -->
+      <input
+        class="form-input js-validate-error-label"
+        name="name"
+        placeholder="Имя*"
+        type="text"
+        data-validate-field="name"
+      >
+      <div class="js-validate-error-label">Вы не ввели имя</div>
+
+      <!-- <label for="tel" class="form-label"></label> -->
+      <input
+        class="form-input js-validate-error-label"
+        name="tel"
+        placeholder="Телефон*"
+        type="tel"
+        data-validate-field="tel"
+      >
+      <div class="js-validate-error-label">Вы не ввели телефон</div>
+
+      <!-- <label for="email" class="form-label"></label> -->
+      <input
+        class="form-input js-validate-error-label"
+        name="email"
+        placeholder="E-mail*"
+        type="email"
+        data-validate-field="mail"
+      >
+      <div class="js-validate-error-label">Вы не ввели email</div>
+
+      <script>
+        new JustValidate('.form', {
+          rules: {
+            name: {
+              required: true,
+              minLength: 2,
+              maxLength: 30,
+            },
+
+            tel: {
+              required: true,
+            },
+
+            mail: {
+              required: true,
+              email: true,
+            },
+          },
+        });
+      </script>
+
+      <button class="form-button">Заказать</button>
+    </form>
+
+    <div class="section-tooltip">
+      <div class="tooltip-container">
+        <div class="tooltip-descr">Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик.</div>
+        <div class="tooltip-box">
+          <div class="tooltip-icon1" tabindex="1"></div>
+          <div class="tooltip-info">Глава 2, страница 126</div>
+        </div>
+      </div>
+
+      <div class="tooltip-container">
+        <div class="tooltip-descr">Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик.</div>
+        <div class="tooltip-box">
+          <div class="tooltip-icon2" tabindex="2"></div>
+          <div class="tooltip-info">Глава 2, страница 126</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
